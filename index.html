@@ -4,17 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-    
+    <link rel="stylesheet" href="style.css">
     <title>Frontend Mentor | Fylo data storage component</title>
   </head>
   <body>
+    <main> 
 
-    You’ve used 815 GB of your storage
+      <section class="landing flex align-center justify-center">
 
-    185 GB Left
-    
-    0 GB
-    1000 GB
-    
+        <div class="container flex align-end">
+          <div>
+            <img src="./images/logo.svg" alt="logo" />
+            <div class="options flex">
+              <div class="flex align-center justify-center">
+                <img src="./images/icon-document.svg" alt="Document" aria-label="Document icon" />
+              </div>
+              <div class="flex align-center justify-center">
+                <img src="./images/icon-folder.svg" alt="Folder" aria-label="Folder icon" />
+              </div>
+              <div class="flex align-center justify-center">
+                <img src="./images/icon-upload.svg" alt="Upload" aria-label="Upload icon" />
+              </div>
+            </div>
+          </div>
+          <div class="progress-container">
+            <p>
+              You’ve used <span class="storage">815 GB</span> of your
+              storage
+            </p>
+            <div class="progress-bar flex align-center">
+              <div class="progress"></div>
+            </div>
+            <div class="progress-storage flex align-center space-between">
+              <span class="storage">0 GB</span>
+              <span class="storage">1000 GB</span>
+            </div>
+            <div class="left-storage">
+              <p><span>185</span> GB Left</p>
+            </div>
+          </div>
+        </div>
+
+        <img src="./images/bg-desktop.png" alt="Background" aria-label="Background image" class="bg-landing" />
+
+      </section>
+
+    </main>
+
   </body>
 </html>
