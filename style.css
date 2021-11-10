@@ -167,3 +167,48 @@ body {
   z-index: -1;
 }
 
+@media (max-width: 850px) {
+  .landing {
+    background: url("./images/bg-mobile.png") no-repeat center/cover;
+    flex-direction: column;
+  }
+
+  .left-storage {
+    top: unset;
+    bottom: -3em;
+    right: 50%;
+    transform: translateX(50%);
+    border-bottom-right-radius: 0.6em;
+    white-space: nowrap;
+  }
+
+  .left-storage::after {
+    display: none;
+  }
+
+  .landing .container {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .container > div:first-child {
+    flex: 1 1 100%;
+    width: 100%;
+    margin: 2em 0;
+  }
+
+  .container > div:nth-child(2) {
+    flex: 1 1 100%;
+    width: 100%;
+    min-width: unset;
+    margin: 2em 0;
+  }
+
+  .bg-landing {
+    display: none;
+  }
+
+  .attribution {
+    position: relative;
+  }
+}
