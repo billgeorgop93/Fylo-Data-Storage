@@ -124,6 +124,12 @@ body {
   color: var(--grayish-blue);
 }
 
+.progress-container h1 {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--grayish-blue);
+}
+
 .progress-bar {
   width: 100%;
   height: 20px;
